@@ -1,0 +1,15 @@
+﻿<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Action Sheet</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+   <ion-item>
+       <ion-label>Start Time</ion-label>
+       <ion-datetime displayFormat ="hh:mm A" pickerFormat="hh mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
+   </ion-item>
+</ion-content>

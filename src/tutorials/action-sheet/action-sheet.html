@@ -1,0 +1,24 @@
+﻿<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Action Sheet</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-fab bottom middle edge>
+        <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+        <ion-fab-list side="top">
+            <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+            <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+        </ion-fab-list>
+    </ion-fab>
+   <button ion-button (click)="presentActionSheet()">Action sheet</button>
+    <ion-item>
+        <ion-icon name="logo-twitter" item-left></ion-icon>
+        Followers
+        <ion-badge item-right>260k</ion-badge>
+    </ion-item>
+</ion-content>
